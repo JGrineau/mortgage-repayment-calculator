@@ -34,5 +34,49 @@ body{
     max-width: 850px;
     border-radius: 1em;
     background-color: var(--White);
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
 }
-
+.calculator-form {
+    border-radius: 1em 0 0 1em;
+    padding: 1.7em 1.3em;
+  }
+  
+  .heading {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5em;
+    margin-bottom: 1.5em;
+  }
+  
+  .heading > h1 {
+    color: var(--Slate900);
+    font-size: 1.6rem;
+    font-weight: 700;
+  }
+  .heading > a {
+    color: var(--Slate500);
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  .input-label {
+    color: var(--Slate500);
+    margin-bottom: 0.7em;
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+  
+  .input-container {
+    border: 1px solid var(--Slate500);
+    border-radius: 0.25em;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 0.8em;
+    width: 100%;
+  }
+    
