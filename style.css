@@ -37,9 +37,12 @@ body {
 .results-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center; /* Centers content */
-  padding: 2em;
+  justify-content: flex-start;
+  align-items: center;
+  /* padding: 2em; */
+  border-radius: 0 0 0 30px;
+  background-color: var(--Slate900);
+  color: var(--White);
 }
 .mortgage-title{
   display: flex;
@@ -47,10 +50,19 @@ body {
   justify-content: space-evenly;
   align-items: center;
   margin: 0.5em;
-  font-size: 12px;
+  /* font-size: 12px; */
   width: 100%;
 }
 .mortgage-form{
   margin-top: 3em;
 }
 
+.results-title{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 3%;
+  /* font-size: 12px; */
+  width: 100%;
+}
