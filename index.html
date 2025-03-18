@@ -6,6 +6,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.google.com/specimen/Plus+Jakarta+Sans">
   <title>Mortgage repayment calculator</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -24,13 +25,27 @@
       </div>
       <div class="mortgage-form">
         <h5>Mortgage Amount</h5>
-        <h5>Mortgage Term</h5>
+        <input type="text" placeholder="Type something..." />
         <div class="rates">
+          <h5>Mortgage Term</h5>
           <h5>Interest Rate</h5>
-          <h5>Mortgage Type</h5>
         </div>
-        <input type="radio">Repayment</inp>
-        <input type="radio">Interest Only</input>
+        <div class="rates-placeholder">
+          <div class="rates-first">
+            <input type="text" placeholder="Type something..." />
+            <i class="term-icon icon">Years</i>
+          </div>
+          <input class="radio" type="text" placeholder="Type something..." />
+        </div>
+          <h5>Mortgage Type</h5>
+        <div class="radio-buttons">
+          <input  type="radio">Repayment</inp>
+        </div>  
+          <div class="interest">
+            <input type="radio" name="type" id="interest" />
+              <label for="type">Interest Only</label>
+          </div>
+        
         <button>Calculate Repayments</button>
       </div>
     </div>

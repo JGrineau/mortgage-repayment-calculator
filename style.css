@@ -19,6 +19,7 @@ body {
   height: 100vh;
   margin: 0;
   background-color: var(--Slate100);
+  font-family: "Plus Jakarta Sans", sans-serif;
 }
 .main-container {
   display: grid;
@@ -33,6 +34,7 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  margin-left: 20px;
 }
 .results-container {
   display: flex;
@@ -48,14 +50,53 @@ body {
 .mortgage-title{
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
-  margin: 0.5em;
   /* font-size: 12px; */
-  width: 100%;
+  width: 80%;
+
 }
-.mortgage-form{
-  margin-top: 3em;
+/* .mortgage-form{
+  margin: 10px;
+} */
+ h5{
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+.mortgage-form input{
+  width: 80%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  /* margin: 10px; */
+  border-radius: 5px;
+  border: 1px solid var(--Slate500);
+}
+.mortgage-form button{
+  width: 100%;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--Slate500);
+  background-color: var(--Slate500);
+  color: var(--White);
+  font-weight: bold;
+}
+
+.term-icon{
+  display: flex;
+  background-color: var(--Slate100);
+  width: 25%;
+  justify-content: center;
+  font-weight: var(--fw-bold);
+  color: var(--clr-Slate-700);
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.icon {
+  display: flex;
+  align-items: center;
 }
 
 .results-title{
@@ -66,4 +107,55 @@ body {
   padding: 3%;
   /* font-size: 12px; */
   width: 100%;
+  margin: 0%;
+}
+
+.rates{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-right: 90px;
+}
+.rates-placeholder{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+.radio{
+  margin-left: 30px;
+}
+.rates-first{
+  display: flex;
+  flex-direction: row;
+}
+.radio-buttons{
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--Slate500);
+  height: 2.5rem;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.interest{
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--Slate500);
+  height: 2.5rem;
+  border-radius: 5px;
+}
+.interest label {
+  font-weight: var(--fw-bold);
+  color: var(--clr-Slate-900);
+  margin: 0;
+}
+
+input[type="radio"] {
+  margin-right: 1rem;
+  width: 1.2em;
+  height: 1.2rem;
+  accent-color: var(--clr-lime);
 }
